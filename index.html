@@ -1,70 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mayur Arde</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-  <nav>
-    <div class="logo">
-      <img src="./mayurlogo-removebg-preview.png" alt="logo" width="180">
-    </div>
-    <div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#./project.html">Home</a></li>
-        <li><a href="#">Blogs</a></li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <header>
+
+  <!--Start navigation bar -->
+  <header>
+    <div class="container">
       <div>
-        <h1>I'am Mayur Arde</h1>
-        <h3>My Portfoilo</h3>
-        <p>I am web developer with skills HTML, CSS, JS.</p>
-      </div>
-      <div>       
-        <button>Resume</button>
-        <button>Contact</button></div>
-    </header>
-    <section>
-      <div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, non quam ullam consequatur, officiis voluptatum laboriosam qui fugiat officia repudiandae adipisci delectus fuga dolor sint, dicta dolore beatae maxime amet.</p>
-      </div>
-    </section>
-    <section>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempora voluptatibus iusto. Facere, iste, aperiam ullam repellendus libero quibusdam excepturi, voluptatum fuga asperiores suscipit repudiandae eveniet inventore velit vitae maxime.</p>
-      </div>
-    </section>
-    <section>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, cupiditate natus. Maiores obcaecati deserunt eligendi cumque qui perferendis aliquid provident rerum autem aperiam illo possimus dignissimos delectus est, aspernatur saepe!</p>
-      </div>
-    </section>
-    <footer>
-      <div>
-        <div>
-          <h3>About me</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quis.</p>
+        <h2 class=nav-logo>Mayur Arde</h2>
+        <div class="nav-toggle" id="navToggle">
+          <img id="navClosed" class="navIcon"
+            src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg"
+            alt="hamburger menu">
+          <img id="navOpen" class="navIcon hidden"
+            src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg"
+            alt="close hamburger">
         </div>
-        <div>
-          <h3>Social Links</h3>
-          <ul>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Linkedin</a></li>
-            <li><a href="">facbook</a></li>
-          </ul>
-        </div>
-        <div></div>
       </div>
-      <div>
-        <p>Copyright &copy;Mayurarde</p>
+
+      <nav>
+        <ul>
+          <li><a href="#" active>Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <!-- Snd navigation bar -->
+
+  <!-- Start main body -->
+  <main class="main">
+    <!-- Start hero section -->
+    <section class=hero>
+      <div class=hero-img>
+        <img class=profile src="./img/—Pngtree—programmers code the website from_4157708.png">
+      </div>
+      <div class=hero-title>
+        <h1 class=hero-heading>
+          Hello! I'm<br> Mayur Arde
+        </h1>
+        <p class="hero-sub-heading">
+          A Front end web developer with skills HTML, CSS, JavaScript, GIT, Bootstrap.
+        </p>
+        <div class=buttons>
+          <a href="./img/Mayur Arde Resume.pdf" class="btn">Resume</a>
+          <a href="./img/Mayur Arde Resume.pdf" class="btn">Contact</a>
+        </div>
+      </div>
+    </section>
+    <!-- End hero section -->
+
+    <!-- Start projects section -->
+    <section class=projects id=projects>
+      <h2>Projects</h2>
+      <div class=work>
+        <div class=projects-tiles>
+          <div class=tile>
+            <a href="https://java-script-documentation.netlify.app/" class="project-links">
+              <img src="./img/JS-documentation ss.png" class=project-img>
+              <h3 class=project-name>
+                JS-Documentation
+              </h3>
+              <p class=project-desc>
+                This was my first HTML CSS project, through this project i got learn about side naviagtion bar and css
+                sticky postion property.
+              </p>
+            </a>
+          </div>
+          <div class=tile>
+            <a href="https://elonmusk-tribute-page.netlify.app/" class="project-links">
+              <img src="./img/Elon tribute ss.png" class=project-img>
+              <h3 class=project-name>
+                JS-Documentation
+              </h3>
+              <p class=project-desc>
+                This was my first HTML CSS project, through this project i got learn about side naviagtion bar and css
+                sticky postion property.
+              </p>
+            </a>
+          </div>
+        </div>
+        <a href="./projects.html" class=btn>view all</a>
+      </div>
+    </section>
+    <!-- End project section -->
+
+    <!-- Start blogs section -->
+    <section class=blog id=blogs>
+      <h2>Blogs</h2>
+      <div class=work>
+        <div class=blog-tiles>
+          <div class=tile>
+            <a href="https://mayurarde.hashnode.dev/css-basic-box-model" class="blog-links">
+              <img src="./img/blog1-ss.png" class=blog-img>
+              <h3 class=blog-name>
+                CSS Box Model
+              </h3>
+              <p class=blog-desc>
+                Here you will get to know basics about box model and its properties.
+              </p>
+            </a>
+          </div>
+          <div class=tile>
+            <a href="https://mayurarde.hashnode.dev/css-basic-box-model" class="blog-links">
+              <img src="./img/blog1-ss.png" class=blog-img>
+              <h3 class=blog-name>
+                CSS Box Model
+              </h3>
+              <p class=blog-desc>
+                Here you will get to know basics about box model and its properties.
+              </p>
+            </a>
+          </div>
+        </div>
+        <a href="./blogs.html" class=btn button>view all</a>
+      </div>
+    </section>
+    <!-- End blogs section -->
+
+    <!-- Start footer section -->
+    <footer class=footer>
+      <div class="footer-top-right">
+        <h3>Social Links</h3>
+        <ul class=links>
+          <li><a href="https://www.linkedin.com/in/mayur-arde/"><img src="./img/iconmonstr-linkedin-3.svg"
+                class="link-icon"></a></li>
+          <li><a href="https://github.com/Mayur-Arde"><img src="./img/iconmonstr-github-3.svg" alt=""
+                class="link-icon"></a></li>
+          <li><a href="https://www.instagram.com/mayur.arde_/"><img src="./img/iconmonstr-instagram-13.svg" alt=""
+                class="link-icon"></a></li>
+          <li><a href="mailto: mayurarde8@gmail.com"><img src="./img/iconmonstr-email-10.svg" alt=""
+                class="link-icon"></a></li>
+        </ul>
+      </div>
+      <p class=copyright>Copyright &copy;Mayurarde</p>
       </div>
     </footer>
+    <!-- End footer section -->
+
   </main>
+  <!-- End main section -->
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
