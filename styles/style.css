@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
   }
 
+  body {
+    background: hsla(242, 58%, 73%, 1);
+  background: linear-gradient(90deg, hsla(242, 58%, 73%, 1) 0%, hsla(158, 72%, 82%, 1) 70%, hsla(157, 72%, 82%, 1) 100%);
+  }
+
   /* scrollbar-style */
   ::-webkit-scrollbar {
     width: 10px;
