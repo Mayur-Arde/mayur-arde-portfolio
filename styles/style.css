@@ -30,7 +30,7 @@ a {
 header {
   background: hsla(242, 58%, 73%, 1);
   background: linear-gradient(90deg, hsla(242, 58%, 73%, 1) 0%, hsla(158, 72%, 82%, 1) 70%, hsla(157, 72%, 82%, 1) 100%);
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.2px solid black;
 }
 
 .container {
@@ -67,7 +67,6 @@ li:hover a {
 }
 
 /* Mobile Toggle */
-
 .nav-toggle {
   display: none;
   position: absolute;
@@ -184,7 +183,6 @@ li:hover a {
 }
 
 .tile {
-  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,7 +252,7 @@ li:hover a {
 }
 
 /* all media queies  */
-
+/* large device */
 @media all and (max-width: 1024px){
 .container h2 {
   font-size: 1.2rem;
@@ -290,7 +288,7 @@ li:hover a {
 
 }
 
-/* tablet view */
+/* medium device */
 @media all and (max-width: 768px){
 nav li {
   padding: 0 0.7rem 0 0;
@@ -350,13 +348,14 @@ nav li {
   padding: 0.3rem 0.7rem;
 }
 
-
- .copyright{
+.copyright{
   margin: 0;
   font-weight:400;
 }
 
+/* small device */
 @media all and (max-width: 425px) {
+  /* hamburger menu */
   .container {
     flex-direction: column;
     align-items: flex-start;
@@ -394,17 +393,13 @@ nav li {
     font-size: 1rem;
   }
 
-  .profile{
-    max-width: 235px;
-  }
-
   .hero {
     width: 80vw;
     padding: 0 10px 20px 10px;
   }
 
-  .projects h2 , .blog h2 {
-    font-size: 2rem;
+  .profile{
+    max-width: 235px;
   }
 
   .hero-heading{
@@ -417,6 +412,10 @@ nav li {
 
   .projects , .blog {
     width: 80vw;
+  }
+
+  .projects h2 , .blog h2 {
+    font-size: 2rem;
   }
 
   .projects-tiles , .blog-tiles {
@@ -443,12 +442,6 @@ nav li {
     font-size: 0.8rem;
    }
 
-
-  .links li {
-    margin: 0px;
-
-  }
-
   .footer{
     width: 80vw;
   }
@@ -459,6 +452,7 @@ nav li {
 
   .links li {
     padding: 0.1rem 0.6rem;
+    margin: 0px;
   }
   
   .link-icon {
@@ -469,6 +463,4 @@ nav li {
     font-size:0.8rem ;
   }
   
-
-
 }
