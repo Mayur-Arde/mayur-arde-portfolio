@@ -141,9 +141,9 @@ li:hover a {
   background: hsla(238, 100%, 71%, 1);
   background: linear-gradient(45deg, hsla(238, 100%, 71%, 0.6) 0%, hsla(198, 100%, 84%, 0.9) 100%);
   font-weight: 600;
-  padding: 0.625rem 1.25rem;
+  padding: 0.6rem 1.25rem;
   border: 1px solid black;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   margin-right: 0.3rem;
 }
 
@@ -211,6 +211,16 @@ li:hover a {
   margin: 0.2rem 0 0;
   padding: 0 0.3rem;
   text-align: center;
+}
+
+
+.view{
+  padding: 0.313rem 1.2rem;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px -5px #333;
+  margin-top: 0.7rem;
+  display: inline-block;
 }
 
 /* footer section */
