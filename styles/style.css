@@ -180,6 +180,7 @@ li:hover a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 1rem;
   margin: 2.5rem 0;
 }
 
@@ -208,12 +209,13 @@ li:hover a {
 }
 
 .project-desc , .blog-desc{
-  margin: 0.2rem 0 0;
+  margin: 0.2rem 0 0.7rem;
   padding: 0 0.3rem;
   text-align: center;
 }
 
 .btn-links {
+  border-top:1px solid black;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -226,8 +228,9 @@ li:hover a {
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 5px 5px -5px #333;
-  margin-top: 0.7rem;
+  margin-top: 0.74rem;
   display: inline-block;
+  border-top:1px solid black; 
 }
 
 /* footer section */
