@@ -8,11 +8,12 @@
   
   :root{
     --redPink:#FF2E63;
-    --darkblue:#212539;
+    --darkblue:#1C2042;
     --color: #ffffff;
     --lightColor: #eaeaeaa4;
     --black:#1A1A1A;
     --grey: #353535;
+    --btn:#25D366;
   }
 
   body {
@@ -100,7 +101,7 @@ li:hover a {
 }
 
 .open {
-  height: 23vh;
+  height: 20vh;
 }
 
 .hidden {
@@ -113,8 +114,8 @@ li:hover a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3rem;
-  padding: 3rem 0;
+  gap: 1rem;
+  padding: 2.5rem 0 1rem;
   background-color: var(--black);
 }
 
@@ -154,19 +155,21 @@ li:hover a {
 }
 
 .btn {
-  background: hsla(238, 100%, 71%, 1);
-  background: linear-gradient(45deg, hsla(238, 100%, 71%, 0.6) 0%, hsla(198, 100%, 84%, 0.9) 100%);
-  font-weight: 600;
-  padding: 0.6rem 1.5rem;
-  border: 1px solid black;
-  border-radius: 0.5rem;
-  margin-right: 0.3rem;
+  padding: 0.6rem 1.2rem;
+  background: none;
+  /* color: var(--black); */
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid green;
+  transition: all 0.4s;
 }
 
 .btn:hover{
-  background: hsla(238, 100%, 71%, 1);
-  background: linear-gradient(225deg, hsla(238, 100%, 71%, 0.5) 0%, hsla(198, 100%, 84%, 0.8) 100%);
+  background-color: var(--btn);
 }
+
 
 /* projects and blog section */
 .projects , .blog{
@@ -239,12 +242,8 @@ li:hover a {
 
 .view{
   padding: 0.313rem 1.2rem;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 5px 5px -5px #333;
   margin-top: 0.74rem;
   display: inline-block;
-  border-top:1px solid black; 
 }
 
 /* footer section */
@@ -254,13 +253,8 @@ li:hover a {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background: linear-gradient(to right top, rgba(255,255,255,0.2),rgba(255,255,255,0.5));
-  width:70vw;
-  /* margin-top:3rem; */
-  margin-bottom: 1rem;
-  padding: 0.33rem 0.4rem 0.33rem;
-  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.164);
-  border-radius: 1rem;
+  background-color: var(--redPink);
+  padding: 0.1rem 0.1rem 0.2rem;
   text-align: center;
 }
 
@@ -284,6 +278,10 @@ li:hover a {
 
 .link-icon {
     width: 2rem;
+}
+
+.link-icon:hover{
+  color: var(--redPink) !important;
 }
 
 .copyright{
@@ -326,6 +324,7 @@ li:hover a {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap:5px;
  }
 
  .projects-tiles , .blog-tiles {
@@ -369,11 +368,6 @@ nav li {
  .projects-tiles , .blog-tiles {
   grid-template-columns: 1fr;
 }
-
-
- .projects h2, .blog h2 {
-   font-size: 1.875;
- }
 
  .projects-tiles, .blog-tiles {
    margin: 1.5rem 0;
@@ -430,7 +424,6 @@ nav li {
 
   .main{
     padding: 1rem 0;
-    gap: 2rem;
   }
 
   .container h2 {
@@ -455,7 +448,6 @@ nav li {
 
   .projects-tiles , .blog-tiles {
     margin: 0.8rem 0;
-  
   }
 
   .tile {
@@ -463,22 +455,21 @@ nav li {
     padding: 0.6rem;
     margin: 0.5rem 0.3rem;
     max-width: 300px;
-    height: 300px;
+    height: 290px;
    }
+
+   .tile h3{
+      font-size: 16px;
+   }
+   
+    .btn{
+     font-size: 0.8rem;
+    }
 
 
   .buttons {
     margin: 0.5rem 0rem 0 0;
    } 
-  
-   .btn{
-    /* padding: 0.2rem 0.5rem; */
-    font-size: 0.8rem;
-   }
-
-  .footer{
-    width: 80vw;
-  }
 
   .footer h3 {
     font-size: 1rem;
