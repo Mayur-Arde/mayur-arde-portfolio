@@ -5,10 +5,18 @@
   font-family: 'Roboto Slab', serif;
   scroll-behavior: smooth;
   }
+  
+  :root{
+    --redPink:#FF2E63;
+    --darkblue:#212539;
+    --color: #ffffff;
+    --lightColor: #eaeaeaa4;
+    --black:#1A1A1A;
+    --grey: #353535;
+  }
 
   body {
-    background: hsla(242, 58%, 73%, 1);
-    background: linear-gradient(90deg, hsla(242, 58%, 73%, 1) 0%, hsla(158, 72%, 82%, 1) 70%, hsla(157, 72%, 82%, 1) 100%);
+    color: var(--color)
   }
 
   /* scrollbar-style */
@@ -33,14 +41,17 @@ a {
 
 /* navigation bar style */
 header {
-  border-bottom: 1.2px solid black;
+  background-color:var(--redPink);
+  font-size: 22px;
+  position: fixed;
+  width: 100%;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 85rem;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -63,6 +74,7 @@ li {
 li a {
   color: #000;
   text-decoration: none;
+  font-weight: 500;
 }
 
 li:hover a {
@@ -74,7 +86,7 @@ li:hover a {
   display: none;
   position: absolute;
   right: 0.7rem;
-  top: 0.5rem;
+  top: 0.2rem;
   cursor: pointer;
 }
 
@@ -84,11 +96,11 @@ li:hover a {
 }
 
 .nav-toggle:hover img {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .open {
-  height: 17vh;
+  height: 23vh;
 }
 
 .hidden {
@@ -101,26 +113,29 @@ li:hover a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 0;
+  background-color: var(--black);
 }
 
 
 /* hero section */
 .hero{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(to right top, rgba(255,255,255,0.2),rgba(255,255,255,0.5));
-  margin-top: 3.125rem;
-  padding-right: 5.625rem;
-  width: 70vw;
-  height: 60vh;
-  border-radius: 1rem;
-  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.164);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--darkblue);
 }
 
 .profile{
   max-width: 500px;
   height: auto;
+}
+
+.hero-title{
+  width: 60%;
 }
 
 .hero-heading {
@@ -131,6 +146,7 @@ li:hover a {
 .hero-sub-heading {
   margin: 0.2rem 0 0;
   font-size: 1.55rem;
+  text-align: center;
 }
 
 .buttons {
@@ -154,16 +170,16 @@ li:hover a {
 
 /* projects and blog section */
 .projects , .blog{
-  width: 70vw;
-  background: linear-gradient(to right top, rgba(255,255,255,0.2),rgba(255,255,255,0.5));
+  width:100%;
   border-radius: 16px;
-  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.164);
-  margin-top:3rem ;
   padding: 2.5rem;
+  background-color: var(--black);
 }
 
 .projects h2 , .blog h2 {
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   font-size: 2.25rem;
   margin: 0.4rem 0;
 }
@@ -176,31 +192,29 @@ li:hover a {
   }
 
 .projects-tiles , .blog-tiles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 2.5rem 0;
 }
 
 .tile {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   max-width:25.87rem;
   margin: 0.65rem 0.938rem;
   padding: 1.25rem;
-  background: hsla(238, 81%, 73%, 1);
-  background: linear-gradient(90deg, hsla(238, 81%, 73%, 0.1) 0%, hsla(198, 100%, 84%, 0.2) 100%);
+  background-color: var(--grey);
   border: 1px solid black;
   border-radius: 0.5rem;
-  /* height: 375px; */
+  height: 390px;
+  max-height: 100%;
 }
 
 .project-img , .blog-img{
-  width: 370px;
+  width: 375px;
+  max-width: 100%;
   margin-bottom: 0.5rem;
 }
 
@@ -211,7 +225,6 @@ li:hover a {
 
 .project-desc , .blog-desc{
   margin: 0.2rem 0 0.7rem;
-  padding: 0 0.3rem;
   text-align: center;
 }
 
@@ -236,9 +249,14 @@ li:hover a {
 
 /* footer section */
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   background: linear-gradient(to right top, rgba(255,255,255,0.2),rgba(255,255,255,0.5));
   width:70vw;
-  margin-top:3rem;
+  /* margin-top:3rem; */
   margin-bottom: 1rem;
   padding: 0.33rem 0.4rem 0.33rem;
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.164);
@@ -282,8 +300,7 @@ li:hover a {
 
 .hero {
   flex-direction: column;
-  padding: 0 1.25rem 1rem;
-  padding: 0 20px 30px 20px;
+  padding: 1.8rem 1rem 1.5rem;
   height: auto;
   justify-content: flex-start;
 }
@@ -300,12 +317,19 @@ li:hover a {
   font-size: 1.25rem;
 }
 
+.hero-title{
+  width: 80%;
+}
 .buttons {
   font-size: 1rem;
   margin: 1rem 0rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+ }
+
+ .projects-tiles , .blog-tiles {
+   grid-template-columns: 1fr 1fr;
  }
 
 }
@@ -320,9 +344,6 @@ nav li {
   font-size: 1rem;
 }
 
-.hero {
-  padding: 0 25px 25px 25px;
-}
 
 .profile{
   max-width: 300px;
@@ -340,20 +361,18 @@ nav li {
   margin: 0.6rem 0rem 0 0;
  } 
 
- .btn{
-  /* padding: 0.4rem 0.7rem; */
- }
 
  .projects , .blog {
   padding: 1rem;
  }
 
+ .projects-tiles , .blog-tiles {
+  grid-template-columns: 1fr;
+}
+
+
  .projects h2, .blog h2 {
    font-size: 1.875;
- }
-
- .project-img, .blog-img {
-  width: 230px;
  }
 
  .projects-tiles, .blog-tiles {
@@ -408,17 +427,14 @@ nav li {
     display: block;
   }
 
-  .hero , .projects , .blog , .footer{
-    margin-top: 2rem;
+
+  .main{
+    padding: 1rem 0;
+    gap: 2rem;
   }
 
   .container h2 {
     font-size: 1rem;
-  }
-
-  .hero {
-    width: 85vw;
-    padding: 0 15px 20px 15px;
   }
 
   .profile{
@@ -431,10 +447,6 @@ nav li {
 
   .hero-sub-heading , .project-desc , .blog-desc {
     font-size: 0.7rem;
-  }
-
-  .projects , .blog {
-    width: 85vw;
   }
 
   .projects h2 , .blog h2 {
@@ -451,12 +463,9 @@ nav li {
     padding: 0.6rem;
     margin: 0.5rem 0.3rem;
     max-width: 300px;
+    height: 300px;
    }
 
-   .project-img, .blog-img {
-    width: 215px;
-    margin-bottom: 0.2rem;
-   }
 
   .buttons {
     margin: 0.5rem 0rem 0 0;
