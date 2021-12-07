@@ -6,6 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mayur Arde</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <!-- Open Sans Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -13,10 +20,10 @@
 <body>
 
   <!--Start navigation bar -->
-  <header>
+  <header class="header">
     <div class="container">
       <div>
-        <h2 class=nav-logo><a href="#">Mayur Arde</a></h2>
+        <h2 class=nav-logo><a href="#">&lt;/<span>Mayur Arde</span>&gt;</a></h2>
         <div class="nav-toggle" id="navToggle">
           <img id="navClosed" class="navIcon"
             src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg"
@@ -27,168 +34,194 @@
         </div>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#" active>Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blogs">Blogs</a></li>
+      <nav class="nav-elements">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#" active>Home</a></li>
+          <li class="nav-link"><a href="#projects">Projects</a></li>
+          <li class="nav-link"><a href="#blogs">Blogs</a></li>
         </ul>
       </nav>
 
     </div>
   </header>
   <!-- End navigation bar -->
+  <div class="email add-on">
+    <a href="mailto:mayurarde8@gmail.com" target="_blank" rel="noopener" class="mail" aria-label="email"
+      data-balloon-pos="left">mayurarde8@gmail.com</a>
+    <div class="mail-line"></div>
+  </div>
 
+  <div class="social add-on">
+    <a href="https://github.com/Mayur-Arde" target="_blank" rel="noopener" aria-label="Github"
+      data-balloon-pos="right"><i class="fa fa-github social-i"></i></a>
+    <a href="https://www.linkedin.com/in/mayur-arde" target="_blank" rel="noopener" aria-label="Linkedin"
+      data-balloon-pos="right"><i class="fa fa-linkedin social-i"></i></a>
+    <a href="https://www.instagram.com/mayur.arde_/" target="_blank" rel="noopener" aria-label="Instagram"
+      data-balloon-pos="right"><i class="fa fa-instagram social-i"></i></a>
+    <a href="https://twitter.com/mayur_arde" target="_blank" rel="noopener" aria-label="Twitter"
+      data-balloon-pos="right"><i class="fa fa-twitter social-i"></i></a>
+    <a href="tel:+91829151231" target="_blank" rel="noopener" aria-label="Phone" data-balloon-pos="right"><i
+        class="fa fa-phone social-i"></i></a>
+    <a href="https://hashnode.com/@devmayur" target="_blank" rel="noopener" aria-label="Hashnode"
+      data-balloon-pos="right"><i class="fa fa-medium social-i"></i></a>
+
+    <div class="social-line"></div>
+  </div>
   <!-- Start main body -->
   <main class="main">
     <!-- Start hero section -->
     <section class=hero>
-      <div class=hero-img>
-        <img class=profile src="./img/—Pngtree—programmers code the website from_4157708.png" alt="profile">
-      </div>
       <div class=hero-title>
-        <h1 class=hero-heading>
-          Hello! I'm<br> Mayur Arde
-        </h1>
-        <p class="hero-sub-heading">
-          A Front end web developer with skills HTML, CSS, JavaScript, GIT, Bootstrap.
-        </p>
+        <h3>Hi There</h3>
+        <h1>I'm <span>Mayur Arde</span></h1>
+        <h2 class="hero-sub-heading">
+          A Front end web developer with skills <span>HTML, CSS, JavaScript, React, GIT, Bootstrap</span>
+        </h2>
         <div class=buttons>
-          <a href="./img/Mayur Arde Resume.pdf" class="btn">Resume</a>
-          <a href="./img/Mayur Arde Resume.pdf" class="btn">Contact</a>
+          <a href="./assets/resource/Mayur-Arde_Frontend-Developer.pdf" class="btn btn-primary" target="_blank">Resume</a>
+          <a href="./assets/resource/Mayur-Arde_Frontend-Developer.pdf" class="btn btn-secondary" target="_blank">Contact</a>
         </div>
+      </div>
+      <div class='hero-img'>
+        <img class=profile src="./assets/hero.svg" alt="profile">
       </div>
     </section>
     <!-- End hero section -->
 
     <!-- Start projects section -->
-    <section class=projects id=projects>
+    <section class='projects' id=projects>
       <h2>Projects</h2>
-      <div class=work>
-        <div class=projects-tiles>
-          <div class=tile>
-            <img src="./img/JS-documenatation-ss.png" class=project-img>
+      <div class='work'>
+        <div class='projects-tiles'>
+          <div class='tile'>
+            <img src="./assets/work/food-menu.png" class=project-img>
             <h3 class=project-name>
-              JS-Documentation
+              Food Menu
             </h3>
-            <p class=project-desc>
-              This was my first HTML CSS project, through this project i got learn about side naviagtion bar and css
-              sticky postion property.
+            <p class='project-desc'>
+              A food menu application that allows users to sort and filter the menu items.
             </p>
             <div class="btn-links">
-              <a href="https://java-script-documentation.netlify.app/" class="btn view">view live</a>
-              <a href="https://github.com/Mayur-Arde/Js-documentation" class="btn view">view code</a>
+              <a href="https://food-menu-cards.netlify.app/" class="work-btn web-link-btn" target='_blank'>view live</a>
+              <a href="https://github.com/Mayur-Arde/Food-Menu" class="work-btn web-link-btn" target='_blank'>view code</a>
             </div>
           </div>
-          <div class=tile>
-            <img src="./img/Elon tribute ss.png" class=project-img>
-            <h3 class=project-name>
-              JS-Documentation
+
+          <div class='tile'>
+            <img src="./assets/work/rock-paper-sicssors.png" class='project-img'>
+            <h3 class='project-name'>
+              rock-paper-sicssors
             </h3>
-            <p class=project-desc>
-              It is a tibute page, i decided to go with Elon Musk.This page is responsive, with a hamburger menu in
-              mobile view.
+            <p class='project-desc'>
+              A simple game built with JavaScript.Rock paper sicssors is a game where you play against the computer.
             </p>
             <div class="btn-links">
-              <a href="https://elonmusk-tribute-page.netlify.app/" class="btn view">view live</a>
-              <a href="https://github.com/Mayur-Arde/tribute-page" class="btn view">view code</a>
+              <a href="https://rock-paper-sicssors-lizard-spock.netlify.app/" class="work-btn web-link-btn" target='_blank'>view
+                live</a>
+              <a href="https://github.com/Mayur-Arde/rock-paper-scissors-UI" class="work-btn web-link-btn" target='_blank'>view code</a>
             </div>
           </div>
-          <div class=tile>
-            <img src="./img/All-Frontend-Mentor.png" class=project-img>
-            <h3 class=project-name>
-              All-Frontend-Mentor Challenge
+
+          <div class='tile'>
+            <img src="./assets/work/grocery-list.png" class='project-img'>
+            <h3 class='project-name'>
+              Grocery List
             </h3>
-            <p class=project-desc>
-              It's contains all the free Frontend Mentor Challenge of HTML and CSS, total 14 projects with live and code.
+            <p class='project-desc'>
+              A simple grocery list app built with it helps you to keep track of your grocery list.
             </p>
             <div class="btn-links">
-              <a href="https://all-frontend-mentor-projects-mayur.netlify.app/" class="btn view">view live</a>
-              <a href="https://github.com/Mayur-Arde/Frontend-Mentor-Html-css-Projects" class="btn view">view code</a>
+              <a href="https://grocery-bucket.netlify.app/" class="work-btn web-link-btn" target='_blank'>view live</a>
+              <a href="https://github.com/Mayur-Arde/Grocery" class="work-btn web-link-btn" target='_blank'>view code</a>
             </div>
           </div>
-          <div class=tile>
-            <img src="./img/form-validator.png" class=project-img>
-            <h3 class=project-name>
-              Form Validator
-            </h3>
-            <p class=project-desc>
-              Basic login form, it validates the number of charaters, email and password matchs with confirm password.
-            </p>
-            <div class="btn-links">
-              <a href="https://mayur-form-validation-refactor.netlify.app/" class="btn view">view live</a>
-              <a href="https://github.com/Mayur-Arde/form-validation-refactor" class="btn view">view code</a>
-            </div>
-          </div>
+
         </div>
-        <a href="./projects.html" class=btn>view all</a>
+        <a href="./projects.html" class='work-btn all-btn'>view all</a>
+      </div>
       </div>
     </section>
     <!-- End project section -->
 
     <!-- Start blogs section -->
-    <section class=blog id=blogs>
+    <section class="blog add-blog" id=blogs>
       <h2>Blogs</h2>
       <div class='work'>
-        <div class=blog-tiles>
-          <div class=tile>
-            <img src="./img/blog1-ss.png" class=blog-img>
+        <div class='blog-tiles'>
+          <div class='tile blog-title'>
+            <img src="./assets/blog/CSS-box-model.jpg" class=blog-img>
             <h3 class=blog-name>
               CSS Box Model
             </h3>
             <p class=blog-desc>
-              Here you will get to know basics about box model and its properties.
-            </p>
-            <div class="btn-links">
-              <a href="https://mayurarde.hashnode.dev/css-basic-box-model" class="btn view">view</a>
-            </div>
-          </div>
-          <div class=tile>
-            <img src="./img/blog1-ss.png" class=blog-img>
-            <h3 class=blog-name>
-              CSS Box Model
-            </h3>
-            <p class=blog-desc>
-              Here you will get to know basics about box model and its properties.
+              A blog post on CSS box model.Basic understanding of box model.
             </p>
             <div class="btn-links"></div>
-            <a href="https://mayurarde.hashnode.dev/css-basic-box-model" class="btn view">view</a>
+            <a href="https://mayurarde.hashnode.dev/css-basic-box-model" class="work-btn web-link-btn" target="_blank">view blog</a>
+          </div>
+          <div class='tile blog-title'>
+            <img src="./assets/blog/array-methods.png" class=blog-img>
+            <h3 class=blog-name>
+              Array Methods
+            </h3>
+            <p class=blog-desc>
+              A blog post on array methods that every developer should know.
+            </p>
+            <div class="btn-links"></div>
+            <a href="https://mayurarde.hashnode.dev/basic-array-methods-every-js-developer-should-know" class="work-btn web-link-btn" target="_blank">view blog</a>
+          </div>
+          <div class='tile blog-title'>
+            <img src="./assets/blog/web-developer-resources.jpg" class=blog-img>
+            <h3 class=blog-name>
+              Web Developer Resources
+            </h3>
+            <p class=blog-desc>
+              A blog post on web developer resources.Help to get some use resources quickly.
+            </p>
+            <div class="btn-links"></div>
+            <a href="https://mayurarde.hashnode.dev/useful-resources-for-web-developer" class="work-btn web-link-btn" target="_blank">view blog</a>
           </div>
         </div>
-        <a href="./blogs.html" class='btn all-button'>view all</a>
+        <a href="./blogs.html" class='work-btn all-btn'>view all</a>
       </div>
       </div>
     </section>
     <!-- End blogs section -->
 
     <!-- End footer section -->
-    
+
   </main>
   <!-- Start footer section -->
+  <!-- https://www.linkedin.com/in/mayur-arde/
+  https://github.com/Mayur-Arde
+  https://www.instagram.com/mayur.arde_/
+  https://hashnode.com/@devmayur
+  mailto: mayurarde8@gmail.com -->
   <footer class=footer>
-    <div class="footer-top-right">
-      <h3>Social Links</h3>
-      <ul class=links>
-        <li><a href="https://www.linkedin.com/in/mayur-arde/"><img src="./img/iconmonstr-linkedin-3.svg"
-              class="link-icon"></a></li>
-        <li><a href="https://github.com/Mayur-Arde"><img src="./img/iconmonstr-github-3.svg" alt=""
-              class="link-icon"></a></li>
-        <li><a href="https://www.instagram.com/mayur.arde_/"><img src="./img/iconmonstr-instagram-13.svg" alt=""
-              class="link-icon"></a></li>
-        <li><a href="https://hashnode.com/@devmayur"><svg xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.8rem"
-              height="1.8rem"
-              style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-              preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-              <path
-                d="M22.351 8.019l-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.953a3.953 3.953 0 1 1 0-7.906a3.953 3.953 0 0 1 0 7.906z"
-                fill="black" />
-            </svg></a></li>
-        <li><a href="mailto: mayurarde8@gmail.com"><img src="./img/iconmonstr-email-10.svg" alt=""
-              class="link-icon"></a></li>
-      </ul>
+    <a href="#" class="up-btn-wrapper" alt="Go to top">
+      <i class="fa fa-angle-up up-btn"></i>
+    </a>
+    <div class="footer-icons">
+      <a href="https://github.com/Mayur-Arde" target="_blank" rel="noopener" alt="Github">
+        <i class="fa fa-github footer-i"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mayur-arde/" target="_blank" rel="noopener" alt="linkedin">
+        <i class="fa fa-linkedin footer-i"></i>
+      </a>
+      <a href="https://www.instagram.com/mayur.arde_/" target="_blank" rel="noopener" alt="Instagram">
+        <i class="fa fa-instagram footer-i"></i>
+      </a>
+      <a href="https://hashnode.com/@devmayur" target="_blank" rel="noopener" alt="Hashnode">
+        <i class="fa fa-medium footer-i"></i>
+      </a>
+      <a href="mailto: mayurarde8@gmail.com" target="_blank" rel="noopener" alt="Mail">
+        <i class="fa fa-send  footer-i"></i>
+      </a>
+
     </div>
-    <p class=copyright>Copyright &copy;Mayurarde</p>
+    <hr / width="100%">
+    <p>Made with ❤️ by Mayur Arde 🧑‍💻</p>
+    <p class="copyright">&copy;MayurArde</p>
     </div>
   </footer>
   <!-- End main section -->
